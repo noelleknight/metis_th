@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Metis Mockup</title>
 
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,121 +18,161 @@
 <style>
 </style>
 <body>
-  <!-- begin nav -->
-  <div class="container mt-3">
-    <nav class="navbar navbar-toggleable-md  navbar-expand-lg navbar-dark bg-dark rounded">
+
+<!-- begin nav -->
+  <nav class="navbar navbar-toggleable-md  navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#metisNav" aria-controls="metisNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Metis Travel</a>
-      <div class="collapse navbar-collapse" id="metisNav">
-        <form class="form-inline ml-auto mt-2 mr-3">
-          <button class="btn btn-dark my-2 my-sm-0 hidden-sm-down d-inline" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-          <input class="form-control border-light" type="text" placeholder='Search'>
-        </form>
-        <ul class="nav nav-pills mt-2">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse collapse-in" id="metisNav">
+        <ul class="nav navbar-nav nav-pills nav-stacked ml-auto mt-3 mr-2">
+          <li class="nav-item text-center">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <button class="btn btn-secondary" type="button"><i class="fas fa-search d-inline"></i></button>
+              </div>
+              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+          </ul>
+          <ul class="nav navbar-nav nav-pills nav-stacked mt-2 mr-2">
+          </li>
+          <li class="nav-item text-center">
             <a class="nav-link active text-light" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-center">
             <a class="nav-link text-light" href="#">Offers</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-center">
             <a class="nav-link text-light" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-center">
             <a class="nav-link text-light" href="#">Contact</a>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 <!-- end nav -->
 
-<!-- Modal -->
-        <div class="modal fade" id="metisModal" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Metis Modal</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
+<!-- Modals -->
+  <!-- modal 1 -->
+  <div class="modal fade" id="metisModal1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Metis Modal 1</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        </div>
-        <!-- End modal -->
-
-        <!-- Locations section -->
-        <div class="container mt-5">
-          <h1>Travel Locations</h1>
-          <div class="row">
-            <div class="col-lg-4 p-2">
-              <img src="images/one.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;"/>
-            </div>
-            <div class="col-lg-4 p-2">
-              <img src="images/two.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;" />
-            </div>
-            <div class="col-lg-4 p-2">
-              <img src="images/three.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Offers section -->
-        <div class="container mt-5">
-          <div class="row mt-3 pb-3 pt-3  border-top border-bottom border-primary">
-            <div class="col-lg-4 pt-2">
-              <h2>Exclusive Offers</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p class="text-center">
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
-              </p>
-            </div>
-            <div class="col-lg-4 pt-2">
-              <h2>Destinations</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p class="text-center">
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
-              </p>
-            </div>
-            <div class="col-lg-4 pt-2">
-              <h2>The Best Prices</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p class="text-center">
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
-              </p>
-            </div>
-          </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-
-      <!-- Contact form -->
-    <div class="container mt-5">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white rounded p-3">
-        <h2 class="mt-2 mb-2">Comments</h2>
-        <form style="width: 75%">
-            <div class="form-group">
-                <input class="form-control form-control-md" placeholder="Name" type="text">
-            </div>
-            <div class="form-group">
-                <input class="form-control form-control-md" placeholder="Email" type="email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary btn-lg btn-block">Submit</button>
-            </div>
-        </form>
     </div>
   </div>
+<!-- modal 2 -->
+<div class="modal fade" id="metisModal2" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Metis Modal 2</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 3 -->
+<div class="modal fade" id="metisModal3" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Metis Modal 3</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End modals -->
+
+<!-- Locations section -->
+<div class="container rounded mt-5">
+  <h1>Travel Locations</h1>
+  <div class="row">
+    <div class="col-lg-4 p-2">
+      <img src="images/one.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;"/>
+    </div>
+    <div class="col-lg-4 p-2">
+      <img src="images/two.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;" />
+    </div>
+    <div class="col-lg-4 p-2">
+      <img src="images/three.jpg" alt="Travel destination" style="width:100%; height: auto; max-height: 250px;" />
+    </div>
+  </div>
+</div>
+
+<!-- Offers section -->
+<div class="container mt-5">
+  <div class="row mt-3 pb-3 pt-3  border-top border-bottom border-primary">
+    <div class="col-lg-4 pt-2">
+      <h2>Exclusive Offers</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="text-center">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal1">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
+      </p>
+    </div>
+    <div class="col-lg-4 pt-2">
+      <h2>Destinations</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="text-center">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal2">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
+      </p>
+    </div>
+    <div class="col-lg-4 pt-2">
+      <h2>The Best Prices</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="text-center">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#metisModal3">View More <i class="fas fa-chevron-right" style="color: #ffffff;"></i></button>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact form -->
+  <div class="container mt-5">
+    <div class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white rounded p-3">
+      <h2 class="mt-2 mb-2">Comments</h2>
+      <form style="width: 75%">
+        <div class="form-group">
+          <input class="form-control form-control-md" placeholder="Name" type="text">
+        </div>
+        <div class="form-group">
+          <input class="form-control form-control-md" placeholder="Email" type="email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
